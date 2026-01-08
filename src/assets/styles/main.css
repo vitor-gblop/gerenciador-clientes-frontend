@@ -3,6 +3,9 @@
 @import url(./colors.css);
 @import url(./utils.css);
 @import url(./components/header.css);
+@import url(./components/_home.css);
+@import url(./components/_clients.css);
+@import url(./components/navigation.css);
 
 *{
     margin: 0;

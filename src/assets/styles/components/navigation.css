@@ -1,0 +1,17 @@
+.active {
+    background-color: blueviolet;
+}
+.nav-btn {
+    width: 6em;
+    height: 1em;
+
+    text-align: center;
+    font-size: small;
+}
+.navigation-container {
+    bottom: 0;
+}
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
