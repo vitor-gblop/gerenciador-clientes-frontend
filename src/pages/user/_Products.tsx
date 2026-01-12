@@ -6,13 +6,13 @@ export default function Products() {
         <>
             <NavigationBar activeBar="produtos" />
 
-            <div className="container costumers-container">
+            <div className="container list-container">
                 <h3 className="text-align-center">Client List</h3>
                 {produtosExample.map((item) => (
                     <>
                         <a
                             href={"/user/products/" + item.id}
-                            className="costumer-link display-block width-100p padding-1"
+                            className="item-link display-block width-100p padding-1"
                         >
                             {item.name}
                         </a>
