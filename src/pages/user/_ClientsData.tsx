@@ -3,8 +3,8 @@ import {
     type Client,
     initialClients,
 } from "./components/shared/clientes.example";
-import { produtosExample } from "./components/shared/produtos.example";
 import NavigationBar from "./components/shared/Navigation";
+import { produtosExample } from "./components/shared/produtos.example";
 
 function find(id: any): Client | undefined {
     return initialClients.find((client) => id == client.id);
