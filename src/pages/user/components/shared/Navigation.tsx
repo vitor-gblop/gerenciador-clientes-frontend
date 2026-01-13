@@ -4,7 +4,7 @@ type NavigationProps = {
 };
 export default function NavigationBar({ activeBar }: NavigationProps) {
   return (
-    <div className="navigation-container width-100p margin-auto absolute">
+    <div className="navigation-container width-100p margin-auto fixed">
       <nav className="container navbar-container">
         <a
           href="/home"

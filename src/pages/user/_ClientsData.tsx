@@ -3,15 +3,17 @@ import {
     type Client,
     initialClients,
 } from "./components/shared/clientes.example";
+import ConfirmationModal from "./components/shared/ConfirmationModal";
 import NavigationBar from "./components/shared/Navigation";
 import { produtosExample } from "./components/shared/produtos.example";
 
-function find(id: any): Client | undefined {
-    return initialClients.find((client) => id == client.id);
+function find(id: string): Client | undefined {
+
+    return initialClients.find((client) => parseInt(id) == client.id);
 }
 export default function CustomerData() {
     const { id } = useParams();
-    const costumer: Client | undefined = find(id);
+    const costumer: Client | undefined = id ? find(id) : undefined;
 
     // console.log(id);
     // console.log(find(id));
@@ -50,7 +52,20 @@ export default function CustomerData() {
                         </article>
                     ) : null;
                 })}
+                
+                {/* <article
+                            key={'1'}
+                            className="product-box padding-1 border-radius-15 margin-bottom-1 margin-top-1"
+                        >
+                            <h3>{"product.name"}</h3>
+                            <p>{"product.description"}</p>
+                        </article>
+                 */}
+                        
             </article>
+            <div className="width-100p margin-bottom-3">
+                <ConfirmationModal id="products-confirm-modal" title="Tem certeza?" displayTitle="Remover Produto" className="width-100p padding-1">Remover Cliente</ConfirmationModal>
+            </div>
         </>
     );
 }

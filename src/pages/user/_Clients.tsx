@@ -1,4 +1,4 @@
-import ItemsButtons from "./components/Buttons";
+import ItemsButtons from "./components/shared/Buttons";
 import NavigationBar from "./components/shared/Navigation";
 import { initialClients } from "./components/shared/clientes.example";
 

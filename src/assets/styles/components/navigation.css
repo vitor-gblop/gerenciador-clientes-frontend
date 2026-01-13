@@ -1,9 +1,10 @@
 .active {
-    background-color: rgb(43, 226, 217);
+    background-color: rgb(43, 226, 217) !important;
 }
 .nav-btn {
     text-align: center;
     font-size: small;
+    background-color: aliceblue;
 }
 .navigation-container {
     bottom: 0;
