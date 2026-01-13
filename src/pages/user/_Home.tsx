@@ -9,6 +9,7 @@ export default function Home() {
                     <h2 className="text-align-center ">Dashboard</h2>
                     <h2>1000</h2>
                 </header>
+                <br />
                 <p>Bem vindo! {user.name}</p>
                 <NavigationBar activeBar="inicio" />
             </div>

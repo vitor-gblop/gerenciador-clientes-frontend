@@ -6,7 +6,7 @@ export default function Clients() {
         <>
             <NavigationBar activeBar="clientes" />
 
-            <div className="container list-container">
+            <div className="container list-container padding-top-2">
                 <h3 className="text-align-center">Client List</h3>
                 {initialClients.map((client) => (
                     <>

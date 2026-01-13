@@ -6,7 +6,7 @@ export default function Products() {
         <>
             <NavigationBar activeBar="produtos" />
 
-            <div className="container list-container">
+            <div className="container list-container padding-top-2">
                 <h3 className="text-align-center">Client List</h3>
                 {produtosExample.map((item) => (
                     <>
