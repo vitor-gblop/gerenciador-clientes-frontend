@@ -12,7 +12,7 @@ export default function Products() {
                     <>
                         <a
                             href={"/user/products/" + item.id}
-                            className="item-link display-block width-100p padding-1"
+                            className="item-link display-block padding-1"
                         >
                             {item.name}
                         </a>

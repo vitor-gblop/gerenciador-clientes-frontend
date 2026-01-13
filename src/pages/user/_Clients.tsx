@@ -12,7 +12,7 @@ export default function Clients() {
                     <>
                         <a
                             href={"/user/clients/" + client.id}
-                            className="item-link display-block width-100p padding-1"
+                            className="item-link display-block padding-1"
                         >
                             {client.name}
                         </a>
